@@ -592,7 +592,6 @@
 /Users/janae/Projects/BookstoreProject-Mission11/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
 /Users/janae/Projects/BookstoreProject-Mission11/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
 /Users/janae/Projects/BookstoreProject-Mission11/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
-/Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.csproj.AssemblyReference.cache
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.GeneratedMSBuildEditorConfig.editorconfig
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.AssemblyInfoInputs.cache
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.AssemblyInfo.cs
@@ -635,6 +634,7 @@
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Account/Default.cshtml.g.cs
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/CartSummary/Default.cshtml.g.cs
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/Types/Default.cshtml.g.cs
+/Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_CookiesPartial.cshtml.g.cs
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
@@ -648,4 +648,3 @@
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.dll
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.pdb
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.genruntimeconfig.cache
-/Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_CookiesPartial.cshtml.g.cs

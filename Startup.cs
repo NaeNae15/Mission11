@@ -42,17 +42,6 @@ namespace BookstoreProject
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppIdentityDBContext>();
 
-            services.Configure<IdentityOptions>(opts =>
-            {
-                opts.Password.RequiredLength = 6;
-                opts.Password.RequireNonAlphanumeric = false;
-                opts.Password.RequireLowercase = false;
-                opts.Password.RequireUppercase = false;
-                opts.Password.RequireDigit = false;
-                opts.User.RequireUniqueEmail = true;
-                opts.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyz";
-            });
-
             services.Configure<CookiePolicyOptions>(options =>
             {
                     // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -106,7 +95,6 @@ namespace BookstoreProject
             });
 
             IdentitySeedData.EnsurePopulated(app);
-            IdentitySeedData.CreateAdminAccount(app.ApplicationServices, Configuration);
         }
     }
 }
