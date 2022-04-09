@@ -1,0 +1,39 @@
+﻿@using Microsoft.AspNetCore.Http.Features
+
+@{
+    var consentFeature = Context.Features.Get<ITrackingConsentFeature>();
+    var showBanner = !consentFeature?.CanTrack ?? false;
+    var cookieString = consentFeature?.CreateConsentCookie();
+}
+
+@if (showBanner)
+{
+
+    <div class="d-flex justify-content-center container mt-5" style="bottom: 10px; position: fixed">
+        <div class="row">
+            <div class="col-md-10">
+                <div class="d-flex flex-row justify-content-between align-items-center card cookie p-3">
+                    <div id="cookieConsent" class="alert alert-info alert-dismissible fade show" role="alert">
+                        <p>Cookies & Privacy</p>
+                        <p>
+                            <i class="fa-solid fa-cookie-bite fa-2xl"></i>
+                            This site only stores cookies necessary for site functionality. Do you wish to continue?
+                        </p>
+                        <button class="accept-policy close btn btn-dark align-right stretched-link accept-policy close" type="button" data-dismiss="alert" aria-label="Close" data-cookie-string="@cookieString">
+                            <span aria-hidden="true">Accept</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            var button = document.querySelector("#cookieConsent button[data-cookie-string]");
+            button.addEventListener("click", function (event) {
+                document.cookie = button.dataset.cookieString;
+            }, false);
+        })();
+    </script>
+}

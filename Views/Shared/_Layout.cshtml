@@ -6,6 +6,7 @@
     <title>@ViewBag.Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c5ab850438.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/Site.css" />
 </head>
 <body>
 
@@ -15,10 +16,10 @@
                 <div class="col navbar-brand">The Bookstore</div>
                 <div class="col-6 text-right">
                     <vc:cart-summary></vc:cart-summary>
-                    </div>
-                        <vc:account></vc:account>
-                        <Button class="btn btn-sm" href="/admin" >Login</Button>
-                    <div>
+                </div>
+                <vc:account></vc:account>
+                <Button class="btn btn-sm" href="/admin">Login</Button>
+                <div>
                 </div>
             </div>
         </div>
@@ -33,7 +34,25 @@
         <div class="col-9">
             @RenderBody()
         </div>
+        @*Added a cookies popup :)*@
+        <partial name="_CookiesPartial" />
+
     </div>
     <footer>THE END</footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    <script src="~/lib/jquery/dist/jquery.easing.min.js"></script>
+
+    <script src="~/js/sb-admin-2.min.js"></script>
+
+    <script src="~/lib/chart/Chart.min.js"></script>
+    <script src="~/js/chart-area-demo.js"></script>
+    <script src="~/js/chart-pie-demo.js"></script>
+
+
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

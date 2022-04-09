@@ -11,7 +11,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace BookstoreProject
 {
@@ -43,7 +42,8 @@ namespace BookstoreProject
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppIdentityDBContext>();
 
-            services.Configure<IdentityOptions>(opts => {
+            services.Configure<IdentityOptions>(opts =>
+            {
                 opts.Password.RequiredLength = 6;
                 opts.Password.RequireNonAlphanumeric = false;
                 opts.Password.RequireLowercase = false;
@@ -51,18 +51,13 @@ namespace BookstoreProject
                 opts.Password.RequireDigit = false;
                 opts.User.RequireUniqueEmail = true;
                 opts.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyz";
+            });
 
-                //services.AddAuthentication(opts => {
-                //    opts.DefaultScheme =
-                //        CookieAuthenticationDefaults.AuthenticationScheme;
-                //    opts.DefaultChallengeScheme =
-                //         CookieAuthenticationDefaults.AuthenticationScheme;
-                //}).AddCookie(opts => {
-                //    opts.Events.DisableRedirectForPath(e => e.OnRedirectToLogin,
-                //         "/api", StatusCodes.Status401Unauthorized);
-                //    opts.Events.DisableRedirectForPath(e => e.OnRedirectToAccessDenied,
-                //        "/api", StatusCodes.Status403Forbidden);
-                //});
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                    options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.Strict;
             });
 
             services.AddScoped<IBookstoreProjectRepository, EFBookstoreProjectRepository>();
@@ -90,7 +85,7 @@ namespace BookstoreProject
             app.UseStaticFiles();
             app.UseRouting();
             app.UseSession();
-
+            app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseAuthorization();
 
