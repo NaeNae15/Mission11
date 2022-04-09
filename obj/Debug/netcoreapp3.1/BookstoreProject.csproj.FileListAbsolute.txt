@@ -648,3 +648,4 @@
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.dll
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.pdb
 /Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/BookstoreProject.genruntimeconfig.cache
+/Users/janae/Projects/BookstoreProject-Mission11/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_CookiesPartial.cshtml.g.cs
