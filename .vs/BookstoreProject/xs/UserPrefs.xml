@@ -1,29 +1,26 @@
 ﻿<Properties StartupConfiguration="{F70EC3A0-7BA3-4E83-ABC9-1D27EC6FBAA9}|Default">
   <MonoDevelop.Ide.ItemProperties.BookstoreProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Account/Login.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="Startup.cs" Line="13" Column="36" />
-      <File FileName="Views/Shared/_CookiesPartial.cshtml" Line="37" Column="14" />
-      <File FileName="Views/Shared/_Layout.cshtml" Line="51" Column="53" />
-      <File FileName="../../.nuget/packages/bootstrap/5.1.3/contentFiles/any/any/wwwroot/css/bootstrap.css" Line="1" Column="1" />
-      <File FileName="wwwroot/css/Style.css" Line="166" Column="1" />
-      <File FileName="Views/Account/Login.cshtml" Line="81" Column="11" />
+      <File FileName="Identity.sqlite-wal" Line="1" Column="1" />
+      <File FileName="Models/IdentitySeedData.cs" Line="63" Column="76" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BookstoreProject" expanded="True">
             <Node name="BookstoreProject" expanded="True">
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Account" expanded="True">
-                  <Node name="Login.cshtml" selected="True" />
-                </Node>
+                <Node name="Account" expanded="True" />
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
               </Node>
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

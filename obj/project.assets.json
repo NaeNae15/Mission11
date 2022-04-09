@@ -1755,7 +1755,7 @@
       "outputPath": "/Users/janae/Projects/BookstoreProject-Mission11/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/janae/.config/NuGet/NuGet.Config"
+        "/Users/janae/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
