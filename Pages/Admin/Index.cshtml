@@ -1,0 +1,29 @@
+﻿@page "/admin"
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+
+
+@{
+
+}
+
+@model BookstoreProject.Pages.Admin.IndexModel
+
+@*<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookstore Admin</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="/" />
+</head>
+<body>*@
+    <component type="typeof(Routed)" render-mode="ServerPrerendered" />
+    <script src="/_framework/blazor.server.js"></script>
+@*</body>
+</html>*@
+
+@functions {
+    [Authorize]
+    public class HostModel : PageModel { }
+}

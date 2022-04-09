@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{F70EC3A0-7BA3-4E83-ABC9-1D27EC6FBAA9}|Default">
+  <MonoDevelop.Ide.ItemProperties.BookstoreProject PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Admin/Index.cshtml">
+    <Files>
+      <File FileName="Views/Account/Login.cshtml" Line="1" Column="1" />
+      <File FileName="Models/AppIdentityDBContext.cs" Line="1" Column="1" />
+      <File FileName="Models/ViewModels/LoginModel.cs" Line="1" Column="1" />
+      <File FileName="Startup.cs" Line="112" Column="1" />
+      <File FileName="Controllers/AccountController.cs" Line="20" Column="1" />
+      <File FileName="Models/IdentitySeedData.cs" Line="14" Column="47" />
+      <File FileName="Pages/Admin/Index.cshtml" Line="11" Column="4" />
+      <File FileName="Pages/Admin/AdminLayout.razor" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BookstoreProject" expanded="True">
+            <Node name="BookstoreProject" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Admin" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Account" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

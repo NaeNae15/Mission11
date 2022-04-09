@@ -1,0 +1,19 @@
+﻿@{
+}
+
+@model LoginModel
+<div class="">
+    @if (Model.Username == "Admin")
+    {
+        <small class="navbar-text">
+            <b>Welcom</b>
+            @Model.Username
+        </small>
+    }
+    else
+    {
+        <button type="button" class="btn btn-link" asp-page="/account/login" asp-route-returnurl="@ViewContext.HttpContext.Request.PathandQuery()">
+            Login
+        </button>
+    }
+</div>
